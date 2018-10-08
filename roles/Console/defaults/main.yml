@@ -1,0 +1,14 @@
+dns_server
+
+ntp_server
+
+tacacs_server
+
+radius_server
+
+syslog_server
+
+snmp_community_ro
+
+snmp_community_rw
+

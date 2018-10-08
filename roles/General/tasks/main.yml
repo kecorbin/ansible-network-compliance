@@ -1,0 +1,14 @@
+---
+
+- name: Apply Golden Config
+  # TODO
+
+- name: Apply Golden Config - NXOS
+  # TODO
+
+- name: Apply Golden Config - IOS-XR
+  # TODO
+
+- name: Apply Golden Config - IOS-XE
+  # TODO
+

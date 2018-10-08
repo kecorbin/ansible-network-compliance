@@ -1,0 +1,19 @@
+---
+
+- name: Apply Golden Config
+  # TODO
+
+- name: Apply Golden Config - NXOS
+  tag: nxos
+  nxos_config:
+    src: templates/nx.j2
+
+- name: Apply Golden Config - IOS-XR
+  tag: iosxr
+  ios_config:
+    src: template/xr.j2
+
+- name: Apply Golden Config - IOS-XE
+  tag: iosxe
+  ios_config:
+    src: template/xe.j2
