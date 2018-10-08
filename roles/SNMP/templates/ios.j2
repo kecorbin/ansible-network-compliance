@@ -1,0 +1,12 @@
+snmp-server community {{ snmp_community_ro }} RO {{ snmp_ro_acl }}
+snmp-server community {{ snmp_community_ro }} RW {{ snmp_rw_acl }}
+
+ip access-list extended {{ snmp_ro_acl }}
+ {% for line in snmp_ro_acl_lines %}
+  {{ line }}
+ {% endfor %}
+
+ip access-list extended {{ snmp_rw_acl }}
+{% for line in snmp_rw_acl_lines %}
+  {{ line }}
+{% endfor %}

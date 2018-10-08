@@ -1,0 +1,16 @@
+snmp-server community {{ snmp_community_ro }} group network-operator
+snmp-server community {{ snmp_community_ro }} use-ipv4acl {{ snmp_ro_acl }}
+
+snmp-server community {{ snmp_community_rw }} group network-admin
+snmp-server community {{ snmp_community_rw }} use-ipv4acl {{ snmp_rw_acl }}
+
+
+
+ip access-list {{ snmp_ro_acl }}
+ {% for line in snmp_ro_acl_lines %}
+  {{ line }}
+ {% endfor %}
+ip access-list {{ snmp_rw_acl }}
+{% for line in snmp_rw_acl_lines %}
+  {{ line }} 
+{% endfor %}

@@ -1,16 +1,8 @@
-# compliance_rule_1
+# SNMP Compliance Role
 
-This Ansible Role infuses antigravity, you are warned
+This Ansible Role ensures compliance of SNMP
 
-## Usage
+## Supported Platforms
 
-`ansible-galaxy install compliance_rule_1`
-
-LICENSE: 3-clause BSD license.
-
-## CONTRIBUTING
-
-`git clone git@github.com:kecorbin/compliance_rule_1`
-
----
-Copyright © 2014, Kevin Corbin
+* Cisco IOS
+* Cisco NX-OS

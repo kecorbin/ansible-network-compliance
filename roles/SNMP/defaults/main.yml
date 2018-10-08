@@ -1,14 +1,16 @@
-dns_server
+snmp_community_ro: public
 
-ntp_server
+snmp_community_rw: private
 
-tacacs_server
+snmp_ro_acl: SNMP_RO_ACL
+snmp_rw_acl: SNMP_RW_ACL
 
-radius_server
+snmp_ro_acl_lines:
+  - permit ip host 1.1.1.1 any
+  - permit ip host 2.2.2.2 any
+  - permit ip host 3.3.3.3 any
 
-syslog_server
-
-snmp_community_ro
-
-snmp_community_rw
-
+snmp_rw_acl_lines:
+  - permit ip host 1.1.1.1 any
+  - permit ip host 2.2.2.2 any
+  - permit ip host 3.3.3.3 any

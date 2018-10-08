@@ -1,14 +1,14 @@
 ---
 
 - name: Apply Golden Config
-  # TODO
+  tags: ios
+  when: ansible_network_os|lower == 'ios'
+  ios_config:
+    src: ios.j2
+
 
 - name: Apply Golden Config - NXOS
-  # TODO
-
-- name: Apply Golden Config - IOS-XR
-  # TODO
-
-- name: Apply Golden Config - IOS-XE
-  # TODO
-
+  tags: nxos
+  when: ansible_network_os|lower == 'nxos'
+  nxos_config:
+    src: nxos.j2
