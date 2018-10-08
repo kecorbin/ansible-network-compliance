@@ -1,6 +1,9 @@
 # ansible network compliance
 
-Ansible scripts for ansible network compliance.
+Ansible Scripts to ensure configuration compliance for various features.  
+
+This playbook is organized into several roles, where each role represents a
+configuration area (SNMP, AAA, etc) each role is platform agnostic
 
 ## Build requirements
 
